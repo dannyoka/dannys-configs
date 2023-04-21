@@ -69,10 +69,6 @@
       "commands": [":tabnext"]
     },
     {
-      "before": ["<Leader>", "t", "p"],
-      "commands": [":tabprev"]
-    },
-    {
       "before": ["<Leader>", "s", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
