@@ -42,8 +42,8 @@ vim.keymap.set("n", "<leader>w", "<C-w>")
 
 vim.keymap.set("n", "<leader>gf", ":!gofmt -w '%'<CR>")
 
-vim.keymap.set("n", "tl", ":BufferNext<CR>")
-vim.keymap.set("n", "th", ":BufferPrev<CR>")
+vim.keymap.set("n", "L", ":BufferNext<CR>")
+vim.keymap.set("n", "H", ":BufferPrev<CR>")
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('highlight_yank', {}),
