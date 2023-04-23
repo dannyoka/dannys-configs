@@ -29,4 +29,4 @@ end
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
-vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "T", ":NvimTreeToggle<CR>")
