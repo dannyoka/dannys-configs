@@ -45,6 +45,9 @@ vim.keymap.set("n", "<leader>gf", ":!gofmt -w '%'<CR>")
 vim.keymap.set("n", "L", ":BufferNext<CR>")
 vim.keymap.set("n", "H", ":BufferPrev<CR>")
 
+vim.keymap.set("n", "<leader>bc", "<cmd>BufferClose<CR>")
+vim.keymap.set("n", "<leader>bca", "<cmd>BufferCloseAllButCurrent<CR>")
+
 vim.keymap.set("n", "<leader>ls", ":!live-server '%'<CR>")
 
 vim.api.nvim_create_autocmd('TextYankPost', {
