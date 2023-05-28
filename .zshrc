@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias v=nvim
 export SERVER_USERNAME=dannyoka
 export SERVER_IP_ADDRESS=192.168.1.4
 export BOOTCAMP_LESSON_PLANS=$HOME/bootcamp/fullstack-live/02-Lesson-Plans/Part-Time
@@ -123,8 +123,8 @@ export NVM_DIR="$HOME/.nvm"
 alias shserver="ssh $SERVER_USERNAME@$SERVER_IP_ADDRESS"
 alias lessons="code $BOOTCAMP_LESSON_PLANS"
 alias class-content="code $BOOTCAMP_CLASS_CONTENT"
-alias class-content-nvim="cd $BOOTCAMP_CLASS_CONTENT && nvim $BOOTCAMP_CLASS_CONTENT"
+alias class-content-v="cd $BOOTCAMP_CLASS_CONTENT && v $BOOTCAMP_CLASS_CONTENT"
 export NPM_TOKEN="npm_gChAF8pGsEywmqx6sZ1TLWpARzLPGi0H6GCBi"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-function onvim(){cd "$1" && nvim .;}
+function vo(){cd "$1" && v .;}
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

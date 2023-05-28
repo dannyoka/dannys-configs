@@ -50,6 +50,8 @@ vim.keymap.set("n", "<leader>bca", "<cmd>BufferCloseAllButCurrent<CR>")
 
 vim.keymap.set("n", "<leader>ls", ":!live-server '%'<CR>")
 
+vim.keymap.set("n", "<leader>pr", "<cmd>Prettier<CR>")
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('highlight_yank', {}),
   desc = 'Hightlight selection on yank',
